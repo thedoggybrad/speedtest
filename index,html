@@ -3,8 +3,8 @@
 
 <script>
 //JUST AN EXAMPLE, PLEASE USE YOUR OWN PICTURE!
-var imageAddr = "https://www.kenrockwell.com/contax/images/g2/examples/31120037-5mb.jpg"; 
-var downloadSize = 4995374; //bytes
+var imageAddr = "https://thedoggybrad.github.io/speedtest/test.jpg"; 
+var downloadSize = 14700000; //bytes
 
 function ShowProgressMessage(msg) {
     if (console) {
