@@ -1,4 +1,4 @@
-<img src="favicon.png" alt="LOGO" width="64"  height="64">
+<img src="resources/favicon.png" alt="LOGO" width="64"  height="64">
 
 # Real SpeedTest
 Know what is your download speed in real everyday usage, like when you are downloading things online.
