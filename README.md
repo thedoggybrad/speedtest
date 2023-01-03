@@ -29,4 +29,4 @@ This is tested by the use of test.jpg here in this repository. Then, the JavaScr
 •Upload - It requires PHP to be tested, where the upload will be done?, because Github Pages only supports static sites. This is impossible to implement unless we will have an access to PHP on Github in the future.
 <br>
 <br>
-•Latency - This feature is not impossible to implement, but it will need some work. Maybe, it will come sooner or later.
+•Latency - 	~~This feature is not impossible to implement, but it will need some work. Maybe, it will come sooner or later.~~ Now Supported as a BETA
