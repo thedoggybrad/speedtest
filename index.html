@@ -124,19 +124,7 @@ display: block;
 <h1 class="meow">Real SpeedTest</h1></div>
 <h3 class="desc">Know what is your download speed in real everyday usage, like when you are downloading things online.</h3>
 <h1 id="progress" class="progress">Preparing for the speedtest...</h1>
-       
-<center>
-<img id="junkOne" hidden="hidden" />
-<h1>Your Latency is:</h1>
-</h1><h1 id="timer"></h1>
-</center>
-
-<script>
-var start = new Date().getTime();
-$('#junkOne').attr('src', 'http://fate.holmes-cj.com:8886/').error(function () {
-    var end = new Date().getTime();
-    $('#timer').html("" + (end-start) + "ms");
-});</script>
+      
 
 <center><button class="me" onClick="window.location.reload();">Re-test</button></center>
 
