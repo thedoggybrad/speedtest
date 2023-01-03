@@ -23,6 +23,8 @@ This speedtest tool demonstrates the scenario of a real webserver used for our d
 <br>
 Thus, making this tool 100% accurate on your daily usage of the internet.
 
+## Download
+This is tested by the use of test.jpg here in this repository. Then, the JavaScript calculates the download speed then it is done.
 ## Upload and Latency
 •Upload - It requires PHP to be tested, where the upload will be done?, because Github Pages only supports static sites. This is impossible to implement unless we will have an access to PHP on Github in the future.
 <br>
