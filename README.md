@@ -22,3 +22,9 @@ This will not match because the speedtest tool targets the maximum potential, bu
 This speedtest tool demonstrates the scenario of a real webserver used for our daily web browsing.
 <br>
 Thus, making this tool 100% accurate on your daily usage of the internet.
+
+## Upload and Latency
+•Upload - It requires PHP to be tested, because where the upload will be done?, as Github Pages only supports static sites.
+<br>
+<br>
+•Latency - This feature is not impossible to implement, but it will need some work. Maybe, it will come sooner or later.
