@@ -10,4 +10,4 @@ It uses the github pages' server (which is used by many open-source projects) to
 ## Why the results are changing and so unstable sometimes?
 The results are changing every test because the load on the Github's server is changing and also your internet connection speed to the Github's server is changing.
 <br>
-That is why when you are using your internet to browse the web even your internet connection is 50MBPS and some websites are too slow because the servers of every website are not the same.
+That is why when you are using your internet connection to browse the web even your internet connection is 50MBPS and some websites are too slow because the servers of every website are not the same, both in distance and in their hardware specifications.
