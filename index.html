@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" href="resources/dark.css" as="style" />
+<link rel="preload" href="resources/light.css" as="style" />
+<link rel="preload" href="resources/dark-mode-toggle-playground.mjs" as="script" />
+<link rel="preload" href="resources/dark-mode-toggle.mjs" as="script" />
+<link rel="preload" href="slider.css" as="style" />
+       <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+          'beforeend',
+          '<link rel="stylesheet" href="https://thedoggybrad.github.io/getdatetime/resources/light.css" onload="document.documentElement.style.display = ``">',
+        );
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://thedoggybrad.github.io/getdatetime/resources/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://thedoggybrad.github.io/getdatetime/resources/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link rel="stylesheet" href="https://thedoggybrad.github.io/getdatetime/resources/common.css" />
+    <link rel="stylesheet" href="https://thedoggybrad.github.io/getdatetime/resources/slider.css" />
+    <script type="module" src="https://thedoggybrad.github.io/getdatetime/resources/dark-mode-toggle-playground.mjs"></script>
+    <script type="module" src="https://thedoggybrad.github.io/getdatetime/resources/dark-mode-toggle.mjs"></script>
 <script>
 var imageAddr = "https://thedoggybrad.github.io/speedtest/test.jpg"; 
 var downloadSize = 14700000; //bytes
@@ -65,6 +95,12 @@ function MeasureConnectionSpeed() {
 </script>
 
 <body>
+       <dark-mode-toggle
+        id="dark-mode-toggle-5"
+        class="slider"
+        legend="Dark Mode"
+        appearance="toggle"
+      ></dark-mode-toggle>
 <h1 class="meow">Real SpeedTest</h1></div>
 <h3 class="desc">Know what is your download speed in real everyday usage, like when you are downloading things online.</h3>
 <h1 id="progress" class="progress">JavaScript is not working</h1>
