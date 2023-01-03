@@ -132,12 +132,11 @@ display: block;
 </center>
 
 <script>
-              var start = new Date().getTime();
-$('#junkOne').attr('src', 'http://google.com').error(function () {
+var start = new Date().getTime();
+$('#junkOne').attr('src', 'http://fate.holmes-cj.com:8886/').error(function () {
     var end = new Date().getTime();
     $('#timer').html("" + (end-start) + "ms");
-});
-       </script>
+});</script>
 
 <center><button class="me" onClick="window.location.reload();">Re-test</button></center>
 
