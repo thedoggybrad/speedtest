@@ -100,13 +100,6 @@ function MeasureConnectionSpeed() {
 }
 </script>
        
-       <script>
-              var start = new Date().getTime();
-$('#junkOne').attr('src', 'http://google.com').error(function () {
-    var end = new Date().getTime();
-    $('#timer').html("" + (end-start) + "ms");
-});
-       </script>
 
 <body>
        <dark-mode-toggle
@@ -137,6 +130,14 @@ display: block;
 <h1>Your Latency is:</h1>
 </h1><h1 id="timer"></h1>
 </center>
+
+<script>
+              var start = new Date().getTime();
+$('#junkOne').attr('src', 'http://google.com').error(function () {
+    var end = new Date().getTime();
+    $('#timer').html("" + (end-start) + "ms");
+});
+       </script>
 
 <center><button class="me" onClick="window.location.reload();">Re-test</button></center>
 
