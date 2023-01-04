@@ -35,7 +35,7 @@ Thus, making this tool 100% accurate on your daily usage of the internet.
 <br>
 •Server - it is where a service in the internet (like websites and email services) are hosted.
 <br>
-<br
+<br>
 •Client - is the device of the costumer that uses the specific service that gets the information from the server.
 
 ## Limitations of this tool
