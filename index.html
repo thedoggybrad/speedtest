@@ -131,7 +131,7 @@ display: block;
 
 <div class="latency">
 <img id="junkOne" hidden="hidden" />
-<h1>Your Latency is:</h1><h1 id="timer">Testing your latency...</h1>
+<h1 class="lt1">Your Latency is:</h1><h1 class="lt2"id="timer">Testing your latency...</h1>
 <script>
 var start = new Date().getTime();
 $('#junkOne').attr('src', 'https://thedoggybrad.github.io/speedtest.test.jpg').error(function () {
@@ -166,6 +166,8 @@ $('#junkOne').attr('src', 'https://thedoggybrad.github.io/speedtest.test.jpg').e
 .desc {text-align: center; font-size: 18px}
 .footer {text-align: center; font-size: 14px}
 .documentation {text-align: center; font-size: 18px}
+.lt1 {padding: 0px; margin: 0px;}
+.lt2 {padding: 0px; margin: 0px;}
  {
     -webkit-user-select: none;
     -khtml-user-select: none;
