@@ -40,4 +40,7 @@ Thus, making this tool 100% accurate on your daily usage of the internet.
 
 ## Unimplemented Feature
 The feature measuring upload is impossible to implement (atleast for now) as it would need PHP (which is unavailable on Github Pages), because we cannot upload to a static server/site.
+<br>
+<br>
+The feature measuring packet loss is impossible to implement due to it needs a dynamic server (just like the issue with upload speed).
 
