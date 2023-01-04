@@ -1,7 +1,7 @@
 <img src="resources/favicon.png" alt="LOGO" width="64"  height="64">
 
 # Real SpeedTest
-Know what is your download speed in real everyday usage, like when you are downloading things online.
+Test your internet connection for download speed and latency in real life usage.
 
 ## Introduction
 A Speedtest from a speedtest service provider may not provide 100% real usage accuracy. Yes, it is accurate but the speedtest servers are only used for speedtesting. What will happen if you tested the real multi-purpose used website server? Then, try Real Speedtest to find out.
