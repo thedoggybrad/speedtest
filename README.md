@@ -22,3 +22,10 @@ This will not match because the speedtest tool targets the maximum potential, bu
 This speedtest tool demonstrates the scenario of a real webserver used for our daily web browsing.
 <br>
 Thus, making this tool 100% accurate on your daily usage of the internet.
+
+## Limitations of this tool
+Since Github Pages only support static sites, so a lot of possible features cannot be implemented here in this tool.
+<br>
+The feature measuring upload is impossible as it would need PHP, because we cannot upload to a static server/site.
+<br>
+The feature for measuring latency is being planned to be implemented but there is no assurance, when it will be implemented.
