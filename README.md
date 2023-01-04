@@ -23,8 +23,21 @@ This speedtest tool demonstrates the scenario of a real webserver used for our d
 <br>
 Thus, making this tool 100% accurate on your daily usage of the internet.
 
-## Limitations of this tool
-Since Github Pages only support static sites, so a lot of possible features cannot be implemented here in this tool.
+## Definition of Terms
+•Download Speed - is the speed of transfer from the server to the client, measured in Megabits per secons (MBPS).
 <br>
-The feature measuring upload is impossible as it would need PHP, because we cannot upload to a static server/site.
+<br>
+•Upload Speed - is the speed of transfer from the device to the server, measured in Megabits per secons (MBPS). 
+<br>
+<br>
+•Latency - is the measure of the delay from the client to the server, measured in miliseconds (ms).
+<br>
+<br>
+•Server - it is where a service in the internet (like websites and email services) are hosted.
+<br>
+<br
+•Client - is the device of the costumer that uses the specific service that gets the information from the server.
+
+## Limitations of this tool
+The feature measuring upload is impossible (atleast for now) as it would need PHP (which is unavailable on Github Pages), because we cannot upload to a static server/site.
 
