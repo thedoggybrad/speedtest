@@ -27,10 +27,10 @@ Thus, making this tool 100% accurate on your daily usage of the internet.
 •Download Speed - is the speed of transfer from the server to the client, measured in Megabits per secons (MBPS).
 <br>
 <br>
-•Upload Speed - is the speed of transfer from the device to the server, measured in Megabits per secons (MBPS). 
+•Upload Speed - is the speed of transfer from the client to the server, measured in Megabits per secons (MBPS). 
 <br>
 <br>
-•Latency - is the measure of the delay from the client to the server, measured in miliseconds (ms).
+•Latency - is the measure of the delay time from the client to the server, measured in miliseconds (ms).
 <br>
 <br>
 •Server - it is where a service in the internet (like websites and email services) are hosted.
