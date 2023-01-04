@@ -101,7 +101,7 @@ function MeasureConnectionSpeed() {
     }
 }
 </script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
        
 
@@ -134,7 +134,7 @@ display: block;
 <h1 class="lt1">Your Latency is:</h1><h1 class="lt2"id="timer">Testing your latency...</h1>
 <script>
 var start = new Date().getTime();
-$('#junkOne').attr('src', 'https://thedoggybrad.github.io/speedtest.test.jpg').error(function () {
+$('#junkOne').attr('src', 'https://thedoggybrad.github.io/speedtest.test.jpg').on('error', function () {
     var end = new Date().getTime();
     $('#timer').html("" + (end-start) + " ms");
 });
