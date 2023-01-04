@@ -38,6 +38,6 @@ Thus, making this tool 100% accurate on your daily usage of the internet.
 <br>
 •Client - is the device of the costumer that uses the specific service that gets the information from the server.
 
-## Limitations of this tool
-The feature measuring upload is impossible (atleast for now) as it would need PHP (which is unavailable on Github Pages), because we cannot upload to a static server/site.
+## Unimplemented Feature
+The feature measuring upload is impossible to implement (atleast for now) as it would need PHP (which is unavailable on Github Pages), because we cannot upload to a static server/site.
 
