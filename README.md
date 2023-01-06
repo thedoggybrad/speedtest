@@ -10,7 +10,7 @@ A Speedtest from a speedtest service provider may not provide 100% real usage ac
 It uses the Github pages' server (which is used by many open-source projects) to test your download speed using a 41MB image file, so that we can see what is your download speed in real usage accurately. The Latency test is using jQuery and JavaScript to measure the latency from Yessle (A Independent Search Engine), so that we can measure an average website that can give the results we wanted.
 
 ## Is this speedtest designed for giving the worst results?
-No, this is designed to give the results of an average website using an average service provider. This is not designed to just imitate the speedtest platforms but to give a realistic results if you browse the web.
+No, this is designed to give the results of an average website using an average server and infrastructure. This is not designed to just imitate the speedtest platforms but to give a realistic results if you browse the web.
 
 ## Why the results are changing and so unstable sometimes?
 The results are changing every test because the load on the Github's server is changing and also your internet connection speed to the Github's server is changing.
