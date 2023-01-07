@@ -7,7 +7,7 @@ Test your internet connection for download speed and latency in real life usage.
 A Speedtest from a speedtest service provider may not provide 100% real usage accuracy. Yes, it is accurate but the speedtest servers are only used for speedtesting. What will happen if you tested the real multi-purpose used website server? Then, try Real Speedtest to find out.
 
 ## How it works?
-It uses the Github pages' server (which is used by many open-source projects) to test your download speed using a 41MB image file, so that we can see what is your download speed in real usage accurately. The Latency test is using jQuery and JavaScript to measure the latency from Yessle (A Independent Search Engine), so that we can measure an average website that can give the results we wanted.
+It uses the Github pages' server via HTML and JavaScript (which is used by many open-source projects) to test your download speed using a 41MB image file, so that we can see what is your download speed in real usage accurately. The Latency test is using jQuery and JavaScript to measure the latency from Yessle (An OpenSource/Independent Search Engine), so that we can measure an average website that can give the results we wanted.
 
 ## Is this speedtest designed for giving the worst results?
 No, this is designed to give the results of an average website using an average server and infrastructure. This is not designed to just imitate the speedtest platforms but to give a realistic results if you browse the web.
