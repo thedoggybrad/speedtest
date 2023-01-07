@@ -1,5 +1,5 @@
-var imageAddr = "https://github.com/thedoggybrad/speedtest/releases/download/downloadfile/test.jpg"; 
-var downloadSize = 41026764; //bytes
+var imageAddr = "https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@downloadfile/test.jpg"; 
+var downloadSize = 14700000; //bytes
 
 function ShowProgressMessage(msg) {
     if (console) {
