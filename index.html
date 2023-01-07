@@ -17,19 +17,10 @@
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/mod.js" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/testing/download.js" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/testing/latency.js" as="script" />
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/default.js" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/style.css" as="style" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/style.css">
-       <script>
-      // If `prefers-color-scheme` is not supported, fall back to light mode.
-      // In this case, light.css will be downloaded with `highest` priority.
-      if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
-        document.documentElement.style.display = 'none';
-        document.head.insertAdjacentHTML(
-          'beforeend',
-          '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/light.css" onload="document.documentElement.style.display = ``">',
-        );
-      }
-    </script>
+<script src="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/default.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/dark.css"
