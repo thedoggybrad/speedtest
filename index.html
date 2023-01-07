@@ -14,6 +14,11 @@
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/dark-mode-toggle.mjs" as="script" />
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/slider.css" as="style" />
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js" as="script" />
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/mod.js" as="script" />
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/testing/download.js" as="script" />
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/testing/latency.js" as="script" />
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/style.css" as="style" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/style.css">
        <script>
       // If `prefers-color-scheme` is not supported, fall back to light mode.
       // In this case, light.css will be downloaded with `highest` priority.
@@ -38,69 +43,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/slider.css" />
     <script type="module" src="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/dark-mode-toggle-playground.mjs"></script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/dark-mode-toggle.mjs"></script>
-<script>
-var imageAddr = "https://github.com/thedoggybrad/speedtest/releases/download/downloadfile/test.jpg"; 
-var downloadSize = 41026764; //bytes
 
-function ShowProgressMessage(msg) {
-    if (console) {
-        if (typeof msg == "string") {
-            console.log(msg);
-        } else {
-            for (var i = 0; i < msg.length; i++) {
-                console.log(msg[i]);
-            }
-        }
-    }
-    
-    var oProgress = document.getElementById("progress");
-    if (oProgress) {
-        var actualHTML = (typeof msg == "string") ? msg : msg.join("<br />");
-        oProgress.innerHTML = actualHTML;
-    }
-}
-
-function InitiateSpeedDetection() {
-    ShowProgressMessage("Testing your Download Speed...");
-    window.setTimeout(MeasureConnectionSpeed, 1);
-};    
-
-if (window.addEventListener) {
-    window.addEventListener('load', InitiateSpeedDetection, false);
-} else if (window.attachEvent) {
-    window.attachEvent('onload', InitiateSpeedDetection);
-}
-
-function MeasureConnectionSpeed() {
-    var startTime, endTime;
-    var download = new Image();
-    download.onload = function () {
-        endTime = (new Date()).getTime();
-        showResults();
-    }
-    
-    download.onerror = function (err, msg) {
-        ShowProgressMessage("The testing gone wrong");
-    }
-    
-    startTime = (new Date()).getTime();
-    var cacheBuster = "?nnn=" + startTime;
-    download.src = imageAddr + cacheBuster;
-    
-    function showResults() {
-        var duration = (endTime - startTime) / 1000;
-        var bitsLoaded = downloadSize * 8;
-        var speedBps = (bitsLoaded / duration).toFixed(2);
-        var speedKbps = (speedBps / 1024).toFixed(2);
-        var speedMbps = (speedKbps / 1024).toFixed(2);
-        ShowProgressMessage([
-            "Your download speed is:", 
-            speedMbps + " Mbps"
-        ]);
-    }
-}
-</script>
+<script src="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/testing/download.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/testing/latency.js"></script>
 </head>
 
 <body>
@@ -123,20 +69,13 @@ display: block;
 </style>
 
 
-<img src="resources/favicon.png" alt="LOGO" class="imgcenter" width="64"  height="64">
+<img src="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/favicon.png" alt="LOGO" class="imgcenter" width="64"  height="64">
 <h1 class="meow">Real SpeedTest</h1></div>
 <h3 class="desc">Test your internet connection for download speed and latency in real life usage.</h3>
 
 <div class="latency">
 <img id="junkOne" hidden="hidden" />
 <h1 class="lt1">Your Latency is:</h1><h1 class="lt2"id="timer">Testing your latency...</h1>
-<script>
-var start = new Date().getTime();
-$('#junkOne').attr('src', 'https://www.yessle.com/').on('error', function () {
-    var end = new Date().getTime();
-    $('#timer').html("" + (end-start) + " ms");
-});
-</script>
 </div>
 
 <h1 id="progress" class="progress">Preparing for the speedtest...</h1>
@@ -146,37 +85,8 @@ $('#junkOne').attr('src', 'https://www.yessle.com/').on('error', function () {
 
 <footer class="documentation"><p><a href="https://github.com/thedoggybrad/speedtest/blob/main/README.md">Documentation</a></p></footer>
 <footer class="footer"><p>©<a href="https://github.com/thedoggybrad/">TheDoggyBrad</a>. Provided under <a href="https://github.com/thedoggybrad/speedtest/blob/main/License/">ISC License</a>.</p></footer>
-<style>
-.progress {text-align: center; font-size: 30px}
-.meow {text-align: center; font-size: 40px}
-.me {background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  }
-.latency {text-align: center; font-size: 15px}
-.desc {text-align: center; font-size: 18px}
-.footer {text-align: center; font-size: 14px}
-.documentation {text-align: center; font-size: 18px}
-.lt1 {padding: 0px; margin: 0px;}
-.lt2 {padding: 0px; margin: 0px;}
-* {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: -moz-none;
-    -o-user-select: none;
-    user-select: none;
-}
-</style>
-<script>
-window.addEventListener("contextmenu", e => e.preventDefault());
-</script>
+
+       <script src="https://cdn.jsdelivr.net/gh/thedoggybrad/speedtest@main/resources/mod.js"></script>
 </body>
 
 </html>
