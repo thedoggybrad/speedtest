@@ -39,7 +39,7 @@ function MeasureConnectionSpeed() {
     }
     
     download.onerror = function (err, msg) {
-        ShowProgressMessage("The testing gone wrong");
+        ShowProgressMessage("Retry testing again!");
     }
     
     startTime = (new Date()).getTime();
