@@ -7,10 +7,10 @@ Test your internet connection for download speed and latency in real life usage.
 A Speedtest from a speedtest service provider may not provide 100% real usage accuracy. Yes, it is accurate but the speedtest servers are only used for speedtesting. What will happen if you tested the real multi-purpose used website server? Then, try Real Speedtest to find out.
 
 ## How it works?
-•Download Speed Test - this uses a 14.7MB image file from the jsDelivr CDN and the download speed is being measured by HTML and JavaScript.
+•Download Speed Test - this uses a 14.7MB image file from the Github Pages and the download speed is being measured by HTML and JavaScript.
 <br>
 <br>
-•Latency Test - this is being measured using jQuery and JavaScript and is testing the latency of Cloudflare's homepage.
+•Latency Test - this is being measured using jQuery and JavaScript and is testing the latency of Google's homepage.
 
 ## Is this speedtest designed for giving the worst results?
 No, this is designed to give the results of an average website using an average server and infrastructure. This is not designed to just imitate the speedtest platforms but to give a realistic results if you browse the web.
