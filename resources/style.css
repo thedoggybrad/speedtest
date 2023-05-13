@@ -1,4 +1,4 @@
-
+.progress {font-size: 30px}
 .meow {text-align: center; font-size: 40px}
 .me {background-color: #4CAF50;
   border: none;
@@ -11,7 +11,7 @@
   margin: 4px 2px;
   cursor: pointer;
   }
-.latency {text-align: center; font-size: 15px}
+.latency {font-size: 15px}
 .desc {text-align: center; font-size: 18px}
 .footer {text-align: center; font-size: 14px}
 .documentation {text-align: center; font-size: 18px}
