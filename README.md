@@ -1,6 +1,6 @@
 <img src="resources/favicon.png" alt="LOGO" width="64"  height="64">
 
-# Real SpeedTest
+# Real SpeedTest (1st Generation)
 Test your internet connection for download speed and latency in real life usage.
 
 ## Introduction
