@@ -63,14 +63,48 @@ display: block;
 <h1 class="meow">Real SpeedTest</h1></div>
 <h3 class="desc">Test your internet connection for download speed and latency in real life usage.</h3>
 
+<br>
+
+<style>
+.latency{
+      background-color: lightgreen;
+      width: 35%;
+      height: 65px;
+      font-weight: bold;
+      padding: 40px; 
+      text-align: center;
+      margin: auto;
+      color: black;}
+      
+</style>
 <div class="latency">
 <img id="junkOne" hidden="hidden" />
-<h1 class="lt1">Your Latency is:</h1><h1 class="lt2"id="timer">Testing your latency...</h1>
+<h1 class="lt1">Latency (ms):</h1>
+<h1 class="lt2"id="timer">Testing....</h1>
 </div>
 <script src="testing/latencytest.js"></script>
+
+<br>
+
+<style>
+.download{
+      background-color: lightgreen;
+      width: 35%;
+      height: 65px;
+      font-weight: bold;
+      padding: 40px; 
+      text-align: center;
+      margin: auto;
+      color: black;}
+</style>
+<div class="download">
+<h1 class="lt1">Download Speed (Mbps):</h1>
+<h1 id="progress" class="progress">Please Wait...</h1>
+</div>
     
-<h1 id="progress" class="progress">Preparing for the speedtest...</h1>
-      
+
+<br>
+<br>
 
 <center><button class="me" onClick="window.location.reload();">Re-test</button></center>
 
