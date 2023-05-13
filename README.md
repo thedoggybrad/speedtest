@@ -43,9 +43,3 @@ Thus, making this tool 100% accurate on your daily usage of the internet.
 <br>
 <br>
 •Client - is the device of the costumer that uses the specific service that gets the information from the server.
-
-## Unimplemented Feature(s)
-•Measuring Upload Speed - This feature is very hard to implement as we will need a server that will accept the uploads and a PHP Script. We do not have PHP Support in Github Pages, but geting a stable one for free is impossible. I am planning to implement this, but I might have some hard time on doing this.
-<br>
-<br>
-•Measuring Packet Loss - This feature is very impossible to implement as we will need a very stable server that will feed the results after on. As "Loss" could not be counted if there is no very stable server. It is impossible to do on JavaScript, so it will never be implemented.
