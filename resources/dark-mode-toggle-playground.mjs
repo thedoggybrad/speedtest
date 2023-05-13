@@ -25,7 +25,7 @@
     // so we need the `color` value.
     themeColor.content = getComputedStyle(body).color;
     colorScheme.content = e.detail.colorScheme;
-    icon.href = e.detail.colorScheme === 'dark' ? 'favicon.png' : 'favicon.png';
+    icon.href = e.detail.colorScheme === 'dark' ? 'resources/favicon.png' : 'resources/favicon.png';
     console.log(
         `${e.target.id} changed the color scheme to ${e.detail.colorScheme}`,
     );
