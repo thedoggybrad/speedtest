@@ -1,6 +1,7 @@
 .progress {font-size: 30px}
 .header {text-align: center; font-size: 40px}
-.retest-btn {background-color: #4CAF50;
+.retest-btn {
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -11,7 +12,17 @@
   margin: 4px 2px;
   cursor: pointer;
   }
-.latency {font-size: 15px}
+.latency {
+      font-size: 15px
+      background-color: lightgreen;
+      position: relative;
+      width: 40%;
+      height: 65%;
+      font-weight: bold;
+      padding: 60px;
+      margin: 0 auto;
+      color: black;
+  }
 .intro {text-align: center; font-size: 18px}
 .footer {text-align: center; font-size: 14px}
 .documentation {text-align: center; font-size: 18px}
