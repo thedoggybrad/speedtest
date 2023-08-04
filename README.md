@@ -19,8 +19,7 @@ No, this is designed to give the results of an average website using an average 
 The results are changing every test because the load on the Github's and Google's server is changing and also your internet connection speed to the Github's server is changing.
 <br>
 That is why when you are using your internet connection to browse the web even your internet connection is 200MBPS and some websites are slow or too slow because the servers of every website are not the same, both in distance and in their hardware specifications.<br>
-For simplicity, not every website owners have server capacity like Microsoft and Google or the server you are assigned on is much slower than the previous ones (basically we're talking about like the methods how CDN works).
-
+For simplicity, not every website owners have server capacity like Microsoft and Google or the server you are assigned on is much slower than the previous one (like change of the country/place on where the server is placed on)
 ## Accuracy
 When you compare a normal speedtest tool, the result here and the result from the speeedtest tool will not match.
 <br>
