@@ -30,7 +30,7 @@ This speedtest tool demonstrates the scenario of a real webserver used for our d
 Thus, making this tool 100% accurate on your daily usage of the internet.
 
 ## Definition of Terms
-•Download Speed - is the speed of transfer from the server to the client, measured in the primary unit of Megabits per seconds (Mbps) or in the secondary unit of Megabytes per seconds (MBps). There are 8 bits in a single byte, and your ISP uses bits and your device uses bytes.
+•Download Speed - it is the speed of transfer from the server to the client, measured in the primary unit of Megabits per seconds (Mbps) or in the secondary unit of Megabytes per seconds (MBps). So, to explain the difference, there are 8 bits in a single byte, and your ISP uses bits and your device uses bytes.
 <br>
 <br>
 •Latency - it is the measure of the delay time from the client to the server, measured in miliseconds (ms).
@@ -39,4 +39,4 @@ Thus, making this tool 100% accurate on your daily usage of the internet.
 •Server - it is where a service in the internet (like websites and email services) are hosted.
 <br>
 <br>
-•Client - is the device of the costumer that uses the specific service that gets the information from the server.
+•Client - it is the device of the costumer that uses the specific service that gets the information from the server.
