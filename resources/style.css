@@ -1,19 +1,23 @@
 .progress {font-size: 30px}
 .header {text-align: center; font-size: 40px}
-.retest-btn {
-  background-color: #4CAF50;
+
+.retest-btn{
+ background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
+  position: relative;
+  display: flex;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   }
+
 .latency {
       font-size: 15px;
       background-color: lightgreen;
