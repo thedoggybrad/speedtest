@@ -54,7 +54,7 @@ function MeasureConnectionSpeed() {
         var speedMbps = (speedKbps / 1024).toFixed(2);
         var speedMps = (speedMbps / 8).toFixed(2);
         ShowProgressMessage([
-            speedMbps + " Mbps (Bits)<br>" +
+            speedMbps + " Mbps (Bits)<br><br>" +
             speedMps + " MBps (Bytes)"
         ]);
     }
