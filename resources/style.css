@@ -1,5 +1,5 @@
 .progress {font-size: 30px}
-.meow {text-align: center; font-size: 40px}
+.header {text-align: center; font-size: 40px}
 .retest-btn {background-color: #4CAF50;
   border: none;
   color: white;
@@ -12,7 +12,7 @@
   cursor: pointer;
   }
 .latency {font-size: 15px}
-.desc {text-align: center; font-size: 18px}
+.intro {text-align: center; font-size: 18px}
 .footer {text-align: center; font-size: 14px}
 .documentation {text-align: center; font-size: 18px}
 .lt1,.lt2,.progress {padding: 0px; margin: 0px;}
