@@ -6,14 +6,17 @@ Test your internet connection for download speed and latency in real life usage.
 ## Introduction
 A Speedtest from a speedtest service provider may not provide 100% real usage accuracy. Yes, it is accurate but the speedtest servers are only used for speedtesting. What will happen if you tested the real multi-purpose used website server? Then, try Real Speedtest to find out.
 
+## Data cap draining Notice
+If you are using a capped connection like mobile data or simply your connection is not unlimited, this is a notice for you. The file we will be using to test your connection is just 70.70MB, so if you are just in a cheap mobile data promo then it may drain a 500MB cap in just approximately 7 runs of this speedtest software.
+
 ## How it works?
-•Download Speed Test - this uses a 14.7MB image file from the Github Pages and the download speed is being measured by HTML and a custom javascript code.
+•Download Speed Test - this uses a 70.70MB of a super high resolution image file from the Github Pages and the download speed is being measured by HTML and a custom javascript code. This simulates a software download of an averagely sized software around the file size of 70MB.
 <br>
 <br>
-•Latency Test - this is being measured using jQuery and a custom javascript code and is testing the latency of Google's homepage.
+•Latency Test - this is being measured using jQuery and a custom javascript code and is testing the latency of Google's homepage. This simulates a person who will visit Google for his research.
 
 ## Is this speedtest designed for giving the worst results?
-No, this is designed to give the results of an average website using an average server and infrastructure. This is not designed to just imitate the speedtest platforms but to give a realistic results if you browse the web.
+No, this is designed to give the results of an average website using an average server and infrastructure. This is not designed to just imitate the speedtest platforms but to give realistic results if you browse the web.
 
 ## Why the results are changing and so unstable sometimes?
 The results are changing every test because the load on the Github's and Google's server is changing and also your internet connection speed to the Github's server is changing.
