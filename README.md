@@ -6,11 +6,11 @@ Test your internet connection for download speed and latency in real life usage.
 ## Introduction
 A Speedtest from a speedtest service provider may not provide 100% real usage accuracy. Yes, it is accurate but the speedtest servers are only used for speedtesting. What will happen if you tested the real multi-purpose used website server? Then, try Real Speedtest to find out.
 
-## Data cap draining Notice
-If you are using a capped connection like mobile data or simply your connection is not unlimited, this is a notice for you. The file we will be using to test your connection is just 70.70MB, so if you are just in a cheap mobile data promo then it may drain a 500MB data cap in just approximately 7 runs of this speedtest software.
+## Select your Internet Source Feature
+This feature was added on version 5.1 (Minor Release), to make sure you will not download a 70mb worth of files in a slow or data-capped connection.
 
 ## How it works?
-•Download Speed Test - this uses a 70.70MB of a super high resolution image file from the Github Pages and the download speed is being measured by HTML and a custom javascript code. This simulates a software download of an averagely sized software around the file size of 70MB.
+•Download Speed Test - this uses a variety of image files from the Github Pages and the download speed is being measured by HTML and a custom javascript code. This simulates appropriate image file sizes to download depending on your internet connection source based on your selection in the "Select your Internet Source Feature".
 <br>
 <br>
 •Latency Test - this is being measured using jQuery and a custom javascript code and is testing the latency of Google's homepage. This simulates a person who will visit Google for his research.
