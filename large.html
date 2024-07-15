@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Real SpeedTest</title>
+<meta charset="UTF-8">
+<meta name="description" content="Test your internet connection for download speed and latency for real life usage.">
+<meta name="keywords" content="speedtest">
+<meta name="author" content="TheDoggyBrad">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="resources/favicon.png">
+<link rel="preload" href="resources/dark.css" as="style" />
+<link rel="preload" href="resources/light.css" as="style" />
+<link rel="preload" href="resources/dark-mode-toggle-playground.mjs" as="script" />
+<link rel="preload" href="resources/dark-mode-toggle.mjs" as="script" />
+<link rel="preload" href="resources/sliders.css" as="style" />
+<link rel="preload" href="testing/latency-script.js" as="script" />
+<link rel="preload" href="testing/downloadtest.js" as="script" />
+<link rel="preload" href="testing/latencytest.js" as="script" />
+<link rel="preload" href="resources/default.js" as="script" />
+<link rel="preload" href="resources/style.css" as="style" />
+<link rel="stylesheet" href="resources/style.css">
+<script src="resources/default.js"></script>
+    <link
+      rel="stylesheet"
+      href="resources/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="resources/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link rel="stylesheet" href="resources/sliders.css" />
+    <script type="module" src="resources/dark-mode-toggle-playground.mjs"></script>
+    <script type="module" src="resources/dark-mode-toggle.mjs"></script>
+
+
+<script>
+var imageAddr = "https://github.com/thedoggybrad/speedtest/releases/download/nextgenimg/large.jpg"; 
+var downloadSize = 93800000; //bytes
+
+function ShowProgressMessage(msg) {
+    if (console) {
+        if (typeof msg == "string") {
+            console.log(msg);
+        } else {
+            for (var i = 0; i < msg.length; i++) {
+                console.log(msg[i]);
+            }
+        }
+    }
+    
+    var oProgress = document.getElementById("progress");
+    if (oProgress) {
+        var actualHTML = (typeof msg == "string") ? msg : msg.join("<br />");
+        oProgress.innerHTML = actualHTML;
+    }
+}
+
+function InitiateSpeedDetection() {
+    ShowProgressMessage("Testing...");
+    window.setTimeout(MeasureConnectionSpeed, 1);
+};    
+
+if (window.addEventListener) {
+    window.addEventListener('load', InitiateSpeedDetection, false);
+} else if (window.attachEvent) {
+    window.attachEvent('onload', InitiateSpeedDetection);
+}
+
+function MeasureConnectionSpeed() {
+    var startTime, endTime;
+    var download = new Image();
+    download.onload = function () {
+        endTime = (new Date()).getTime();
+        showResults();
+    }
+    
+    download.onerror = function (err, msg) {
+        ShowProgressMessage("Retry testing again!");
+    }
+    
+    startTime = (new Date()).getTime();
+    var cacheBuster = "?nnn=" + startTime;
+    download.src = imageAddr + cacheBuster;
+    
+    function showResults() {
+        var duration = (endTime - startTime) / 1000;
+        var bitsLoaded = downloadSize * 8;
+        var speedBps = (bitsLoaded / duration).toFixed(2);
+        var speedKbps = (speedBps / 1024).toFixed(2);
+        var speedMbps = (speedKbps / 1024).toFixed(2);
+        var speedMps = (speedMbps / 8).toFixed(2);
+        ShowProgressMessage([
+            speedMbps + " Mbps (Bits)<br>" +
+            speedMps + " MBps (Bytes)"
+        ]);
+    }
+}
+
+</script>
+<script src="testing/latency-script.js"></script>
+</head>
+
+<body>
+       <dark-mode-toggle
+        id="dark-mode-toggle-5"
+        class="slider"
+        legend="Dark Mode"
+        appearance="toggle"
+        remember="Remember this"
+      ></dark-mode-toggle>
+
+<img src="resources/favicon.png" alt="LOGO" class="imgcenter" width="64"  height="64">
+<h1 class="header">Real SpeedTest</h1></div>
+<h3 class="intro">Test your internet connection for download speed and latency for real life usage.</h3>
+
+<br>
+
+<div style="text-align: center;" class="latency">
+<img id="latency-injection" hidden="hidden" />
+<h1 style="text-align: center; position: relative;" class="lt1">Latency:</h1>
+<h1 style="text-align: center; position: relative;" class="lt2" id="latency-result">Testing....</h1>
+</div>
+<script src="testing/latencytest.js"></script>
+
+<br>
+
+<div style="text-align: center; position: relative;" class="download">
+<h1 style="text-align: center; position: relative;" class="lt1">Download Speed:</h1>
+    <br>
+<h1 style="text-align: center; position: relative;" id="progress" class="progress">Please Wait...</h1>
+</div>
+
+<br>
+<br>
+
+<button class="retest-btn" onClick="window.location.reload();">Re-test</button>
+
+<footer class="documentation"><p><a href="https://github.com/thedoggybrad/speedtest/blob/main/README.md">Documentation</a></p></footer>
+<footer class="footer"><p>©<a href="https://github.com/thedoggybrad/">TheDoggyBrad Software Lab</a>. Provided under <a href="https://github.com/thedoggybrad/speedtest/blob/main/License/">ISC License</a>.</p></footer>
+</body>
+
+</html>
