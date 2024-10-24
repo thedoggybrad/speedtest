@@ -25,7 +25,7 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 400px;
             text-align: center;
         }
 
@@ -108,27 +108,25 @@
         <h3>We just need this information to avoid you downloading a 100MB file on a DSL connection.</h3>
         <form id="connectionForm">
             <label>
-                <input type="radio" name="connection" value="5G/Fiber Optics"> 5G/Fiber Optics
-            </label>
-            <label>
+                <input type="radio" name="connection" value="5G/Fiber Optics"> 
+5G/Fiber Optics
                 <input type="radio" name="connection" value="LTE-A/Starlink/Cable"> LTE-A/Starlink/Cable
             </label>
             <label>
                 <input type="radio" name="connection" value="LTE/Other Satellite"> LTE/Other Satellite
-            </label>
-            <label>
                 <input type="radio" name="connection" value="3G/DSL"> 3G/DSL
             </label>
             <label>
                 <input type="radio" name="connection" value="Dial-up/Data Capped"> Dial-up
-            </label>
-            <label>
-                <input type="radio" name="connection" value="I do not know/Free Wifi/Coin-based Wifi"> I do not know/Free Wifi/Coin-based Wifi
-            </label>
+                <input type="radio" name="connection" value="I do not know/Free Wifi/Coin-based Wifi"> Uncertain/Free wifi
+<br>
             <button type="button" onclick="redirect()">Submit</button>
+</label>
             <div id="error" class="error"></div>
         </form>
-        <p>Note: Selecting the inappropriate connection may cause the speeds to become unrealistic due to the nature of "file sizes".</p>
+        <p>Disclaimer: Selecting the inappropriate connection may cause the speeds to become unrealistic due to the nature of "file sizes".</p>
+<footer style="font-size:14px;">©TheDoggyBrad Software Lab. Provided under ISC License.</footer>
+
     </div>
 </body>
 </html>
